@@ -1,0 +1,753 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby24-x64/lib/ruby/gems/2.4.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 9, ../sass/_layout.scss */
+.live-bet {
+  font-family: 'Roboto Condensed', sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  margin: 0 auto;
+  border: 1px solid #213443;
+}
+
+/* line 19, ../sass/_layout.scss */
+.divRow {
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #213443;
+}
+
+/* line 29, ../sass/_layout.scss */
+.divCell-play-gest-position {
+  padding-top: 5px;
+  padding-bottom: 1px;
+}
+
+/* line 34, ../sass/_layout.scss */
+.divCell-play-host-position {
+  padding-top: 1px;
+  padding-bottom: 5px;
+}
+
+/* line 39, ../sass/_layout.scss */
+.div-color:nth-child(odd) {
+  background-color: rgba(17, 17, 17, 0.9);
+  color: #d5dae0;
+}
+
+/* line 44, ../sass/_layout.scss */
+.div-color:nth-child(even) {
+  background-color: rgba(17, 17, 17, 0.6);
+  color: #d5dae0;
+}
+
+/* line 49, ../sass/_layout.scss */
+.winner {
+  font-weight: bold;
+}
+
+/* line 53, ../sass/_layout.scss */
+.no-betting {
+  opacity: 0.3;
+}
+
+/* line 57, ../sass/_layout.scss */
+.p-1-color,
+.ki-1-color {
+  color: #fdb417;
+}
+
+/* line 62, ../sass/_layout.scss */
+.set-metch {
+  width: 48px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  text-align: center;
+  flex: 1 0 auto;
+  color: #fdb417;
+  border-right: 1px solid #213443;
+}
+
+/* line 73, ../sass/_layout.scss */
+.finished-set {
+  text-transform: uppercase;
+  color: red;
+}
+
+/* line 79, ../sass/_layout.scss */
+.divRow-play {
+  display: flex;
+  flex-direction: column;
+  height: 40px;
+  width: 100%;
+  border-right: 1px solid #213443;
+}
+
+/* line 87, ../sass/_layout.scss */
+.divCell-play {
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
+}
+
+/* line 93, ../sass/_layout.scss */
+.dot {
+  width: 10px;
+  margin: 0 8px;
+}
+/* line 97, ../sass/_layout.scss */
+.dot img {
+  width: 8px;
+}
+
+/* line 102, ../sass/_layout.scss */
+.name {
+  flex: 1 0 auto;
+  font-size: 13px;
+}
+
+/* line 107, ../sass/_layout.scss */
+.ki-1 {
+  width: 16px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* line 113, ../sass/_layout.scss */
+.s-1 {
+  width: 16px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* line 119, ../sass/_layout.scss */
+.p-1 {
+  width: 16px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/* line 125, ../sass/_layout.scss */
+.i-1 {
+  width: 16px;
+  height: 24px;
+}
+
+/* line 130, ../sass/_layout.scss */
+.message {
+  display: flex;
+  flex: 0 0 299px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 297px;
+  height: 40px;
+  font-size: 10px;
+}
+
+/* line 141, ../sass/_layout.scss */
+.message-1 {
+  height: 40px;
+  font-size: 10px;
+  line-height: 40px;
+}
+
+/* line 147, ../sass/_layout.scss */
+.message-2 {
+  height: 40px;
+  font-size: 14px;
+  color: red;
+  font-weight: bold;
+  line-height: 40px;
+  padding-left: 10px;
+}
+
+/* line 156, ../sass/_layout.scss */
+.quotes-gem {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex: 0 0 90px;
+  max-width: 90px;
+  height: 40px;
+  border-right: 1px solid #213443;
+}
+
+/* line 166, ../sass/_layout.scss */
+.quote {
+  flex: 1 0 45px;
+}
+
+/* line 209, ../sass/_layout.scss */
+.host-quote,
+.host-gest-quote,
+.gest-quote {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+/* line 216, ../sass/_layout.scss */
+.quotes-set {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 90px;
+  max-width: 90px;
+  height: 40px;
+  border-right: 1px solid #213443;
+}
+/* line 225, ../sass/_layout.scss */
+.quotes-set .quotes-header {
+  height: 12px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 12px;
+  background-color: #030a11;
+}
+/* line 232, ../sass/_layout.scss */
+.quotes-set .quotes {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 239, ../sass/_layout.scss */
+.first-second-gem {
+  height: 12px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 10px;
+}
+
+/* line 246, ../sass/_layout.scss */
+.first-second-gem-background {
+  background-color: #030a11;
+}
+
+/* line 250, ../sass/_layout.scss */
+.total-gem-set {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 117px;
+  height: 40px;
+}
+
+/* line 257, ../sass/_layout.scss */
+.first-second-gem-final {
+  width: 117px;
+  height: 12px;
+  line-height: 11px;
+  text-align: center;
+  font-size: 10px;
+}
+
+/* line 265, ../sass/_layout.scss */
+.arrow-up-final {
+  display: flex;
+  flex-direction: row;
+  width: 117px;
+  height: 4px;
+}
+
+/* line 273, ../sass/_layout.scss */
+.host-arrow-up-final,
+.gest-arrow-up-final {
+  height: 4px;
+  width: 58.5;
+}
+
+/* line 279, ../sass/_layout.scss */
+.quote-final {
+  width: 117px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1 0 auto;
+  font-size: 14px;
+}
+
+/* line 289, ../sass/_layout.scss */
+.host-quote-final,
+.host-gest-quote-final,
+.gest-quote-final {
+  flex: 1 0 auto;
+  text-align: center;
+}
+
+/* line 296, ../sass/_layout.scss */
+.host-gest-quote-final {
+  color: #fdb417;
+}
+
+/* line 300, ../sass/_layout.scss */
+.arrow-down-final {
+  display: flex;
+  flex-direction: row;
+  width: 117px;
+  height: 4px;
+}
+
+/* line 307, ../sass/_layout.scss */
+.arrow-down-final,
+.gest-arrow-down-final {
+  height: 4px;
+  flex: 1 0 58.5;
+}
+
+/* line 313, ../sass/_layout.scss */
+.quote-more {
+  color: #22965c;
+}
+
+/* line 317, ../sass/_layout.scss */
+.quote-less {
+  color: #a81812;
+}
+
+/* line 325, ../sass/_layout.scss */
+.quotes-cell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+/* line 330, ../sass/_layout.scss */
+.quotes-cell .quotes-header {
+  height: 12px;
+  font-size: 10px;
+  text-align: center;
+  line-height: 12px;
+  background-color: #030a11;
+}
+/* line 338, ../sass/_layout.scss */
+.quotes-cell .quotes {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* line 345, ../sass/_layout.scss */
+.quotes-cell .quotes .quote {
+  flex: 1;
+  position: relative;
+  box-sizing: border-box;
+  display: block;
+  padding: 8px 0;
+  height: 30px;
+  line-height: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+/* line 356, ../sass/_layout.scss */
+.quotes-cell .quotes .quote:before, .quotes-cell .quotes .quote:after {
+  content: '';
+  display: none;
+  position: absolute;
+  left: 50%;
+  width: 8px;
+  height: 4px;
+  margin-left: -4px;
+}
+/* line 367, ../sass/_layout.scss */
+.quotes-cell .quotes .quote:before {
+  top: 3px;
+  background: url("../images/quote-up.png");
+  background-size: 100%;
+}
+/* line 373, ../sass/_layout.scss */
+.quotes-cell .quotes .quote:after {
+  bottom: 3px;
+  background: url("../images/quote-down.png");
+  background-size: 100%;
+}
+/* line 379, ../sass/_layout.scss */
+.quotes-cell .quotes .quote.up {
+  color: #22965c;
+}
+/* line 382, ../sass/_layout.scss */
+.quotes-cell .quotes .quote.up:before {
+  display: block;
+}
+/* line 388, ../sass/_layout.scss */
+.quotes-cell .quotes .quote.down {
+  color: #a81812;
+}
+/* line 391, ../sass/_layout.scss */
+.quotes-cell .quotes .quote.down:after {
+  display: block;
+}
+
+/* line 401, ../sass/_layout.scss */
+.quotes-cell-match {
+  flex: 0 0 90px;
+  max-width: 90px;
+  border-right: 1px solid #213443;
+}
+
+/* line 407, ../sass/_layout.scss */
+.quotes-cell-set {
+  flex: 0 0 90px;
+  max-width: 90px;
+  border-right: 1px solid #213443;
+}
+
+/* line 413, ../sass/_layout.scss */
+.quotes-cell-gems {
+  flex: 0 0 117px;
+  max-width: 117px;
+}
+/* line 419, ../sass/_layout.scss */
+.quotes-cell-gems .quote.quote-x {
+  color: #fdb417;
+}
+
+/* line 3, ../sass/_header.scss */
+header {
+  min-height: 40px;
+  background-color: #023617;
+  flex: auto;
+  display: flex;
+  border-bottom: 1px solid #213443;
+}
+
+/* line 11, ../sass/_header.scss */
+.header {
+  align-items: center;
+}
+/* line 14, ../sass/_header.scss */
+.header .button-live-bet {
+  text-decoration: none;
+  height: 24px;
+  margin-left: 8px;
+  flex: 0 0 128px;
+  background-color: #208448;
+  border-radius: 12px;
+  color: #dcffef;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  padding: 4px 12px;
+  line-height: 16px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+/* line 31, ../sass/_header.scss */
+.header .header-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+/* line 37, ../sass/_header.scss */
+.header .header-nav ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+/* line 42, ../sass/_header.scss */
+.header .header-nav ul li {
+  margin-left: 12px;
+}
+/* line 47, ../sass/_header.scss */
+.header .header-nav ul li a {
+  width: 24px;
+  height: 24px;
+  display: block;
+  overflow: hidden;
+  text-indent: -1000px;
+}
+
+/* line 59, ../sass/_header.scss */
+.sprite {
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/sports.jpg");
+  background-repeat: no-repeat;
+}
+/* line 65, ../sass/_header.scss */
+.sprite.sprite-football {
+  background-position: 0 0;
+}
+/* line 69, ../sass/_header.scss */
+.sprite.sprite-ragby {
+  background-position: -24px 0;
+}
+/* line 73, ../sass/_header.scss */
+.sprite.sprite-tennis {
+  background-position: -48px 0;
+}
+/* line 77, ../sass/_header.scss */
+.sprite.sprite-goals-ligue {
+  background-position: -72px 0;
+}
+/* line 81, ../sass/_header.scss */
+.sprite.sprite-chess {
+  background-position: -96px 0;
+}
+/* line 85, ../sass/_header.scss */
+.sprite.sprite-picado {
+  background-position: -120px 0;
+}
+/* line 89, ../sass/_header.scss */
+.sprite.sprite-grass-hockey {
+  background-position: -144px 0;
+}
+/* line 93, ../sass/_header.scss */
+.sprite.sprite-football-goals {
+  background-position: -168px 0;
+}
+/* line 97, ../sass/_header.scss */
+.sprite.sprite-handball {
+  background-position: -192px 0;
+}
+/* line 101, ../sass/_header.scss */
+.sprite.sprite-hockey {
+  background-position: -216px 0;
+}
+/* line 105, ../sass/_header.scss */
+.sprite.sprite-iks-oks {
+  background-position: -240px 0;
+}
+/* line 109, ../sass/_header.scss */
+.sprite.sprite-formula {
+  background-position: -264px 0;
+}
+/* line 113, ../sass/_header.scss */
+.sprite.sprite-billiar {
+  background-position: -288px 0;
+}
+/* line 117, ../sass/_header.scss */
+.sprite.sprite-ping-pong {
+  background-position: -312px 0;
+}
+/* line 121, ../sass/_header.scss */
+.sprite.sprite-baseball {
+  background-position: -336px 0;
+}
+/* line 125, ../sass/_header.scss */
+.sprite.sprite-mma {
+  background-position: -360px 0;
+}
+/* line 129, ../sass/_header.scss */
+.sprite.sprite-voleyball {
+  background-position: -384px 0;
+}
+/* line 133, ../sass/_header.scss */
+.sprite.sprite-waterpolo {
+  background-position: -408px 0;
+}
+/* line 137, ../sass/_header.scss */
+.sprite.sprite-winter-sports {
+  background-position: -432px 0;
+}
+
+/* line 3, ../sass/_image-header.scss */
+.image {
+  min-height: 80px;
+  border-bottom: 1px solid #213443;
+}
+
+/* line 8, ../sass/_image-header.scss */
+.image-only {
+  flex: 1 0 auto;
+  border-right: 1px solid #213443;
+  background: url("../images/header-background.jpg") no-repeat center left;
+  background-size: cover;
+}
+
+/* line 15, ../sass/_image-header.scss */
+.ki-s-p-i {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80px;
+  color: #bcccc1;
+}
+
+/* line 24, ../sass/_image-header.scss */
+.ki {
+  width: 16px;
+  height: 24px;
+  text-align: center;
+}
+
+/* line 30, ../sass/_image-header.scss */
+.s {
+  width: 16px;
+  height: 24px;
+  text-align: center;
+}
+
+/* line 36, ../sass/_image-header.scss */
+.p {
+  width: 16px;
+  height: 24px;
+  text-align: center;
+}
+
+/* line 42, ../sass/_image-header.scss */
+.i {
+  width: 16px;
+  height: 24px;
+  text-align: right;
+}
+
+/* line 48, ../sass/_image-header.scss */
+.match-winner,
+.set-winner {
+  width: 90px;
+  border-right: 1px solid #213443;
+}
+
+/* line 55, ../sass/_image-header.scss */
+.match-winner-1,
+.set-winner-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  height: 56px;
+  width: 90px;
+  background-color: #030a11;
+  color: #d5dae0;
+}
+
+/* line 67, ../sass/_image-header.scss */
+.host-gest {
+  display: flex;
+  width: 90px;
+  height: 24px;
+  line-height: 24px;
+}
+
+/* line 74, ../sass/_image-header.scss */
+.first,
+.second {
+  width: 45px;
+  height: 24px;
+  text-align: center;
+  background-color: #5d5d5d;
+  color: #d5dae0;
+  font-size: 12px;
+}
+
+/* line 84, ../sass/_image-header.scss */
+.gem-set {
+  width: 117px;
+}
+
+/* line 89, ../sass/_image-header.scss */
+.gem-score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  height: 56px;
+  width: 117px;
+  background-color: #030a11;
+  color: #d5dae0;
+}
+
+/* line 100, ../sass/_image-header.scss */
+.less {
+  flex: 1 0 auto;
+  width: 39px;
+  height: 24px;
+  text-align: left;
+  background-color: #5d5d5d;
+  color: #d5dae0;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+/* line 111, ../sass/_image-header.scss */
+.more {
+  flex: 1 0 auto;
+  width: 39px;
+  height: 24px;
+  text-align: right;
+  background-color: #5d5d5d;
+  color: #d5dae0;
+  font-size: 12px;
+  flex: 1 0 auto;
+  padding-right: 10px;
+}
+
+/* line 124, ../sass/_image-header.scss */
+.gem-set .host-gest {
+  width: 117px;
+}

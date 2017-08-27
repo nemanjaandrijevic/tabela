@@ -1,0 +1,127 @@
+@import "variables";
+
+.image {
+    min-height: 80px;
+    border-bottom: 1px solid $border-color;
+}
+
+.image-only {
+    flex: 1 0 auto;
+    border-right: 1px solid $border-color;
+    background: url("../images/header-background.jpg") no-repeat center left;
+    background-size: cover;
+}
+
+.ki-s-p-i {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 80px;
+    color: $ki-s-p-i-color;
+}
+
+.ki {
+    width: 16px;
+    height: 24px;
+    text-align: center;
+}
+
+.s {
+    width: 16px;
+    height: 24px;
+    text-align: center;
+}
+
+.p {
+    width: 16px;
+    height: 24px;
+    text-align: center;
+}
+
+.i {
+    width: 16px; //treba ubaciti sliku
+    height: 24px;
+    text-align: right;
+}
+
+.match-winner,
+.set-winner {
+
+    width: 90px;
+    border-right: 1px solid $border-color;
+}
+
+.match-winner-1,
+.set-winner-1 {
+    @include centerContent();
+    text-align: center;
+    font-size: 14px;
+    height: 56px;
+    width: 90px;
+
+    background-color: $host-gest-background;
+    color: $host-gest-color;
+}
+
+.host-gest {
+    display: flex;
+    width: 90px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.first,
+.second {
+    width: 45px;
+    height: 24px;
+    text-align: center;
+    background-color: $less-more;
+    color: $host-gest-color;
+    font-size: 12px;
+}
+
+.gem-set {
+    width: 117px;
+
+}
+
+.gem-score {
+    @include centerContent();
+    text-align: center;
+    font-size: 14px;
+    height: 56px;
+    width: 117px;
+
+    background-color: $host-gest-background;
+    color: $host-gest-color;
+}
+
+.less {
+    flex: 1 0 auto;
+    width: 39px;
+    height: 24px;
+    text-align: left;
+    background-color: $less-more;
+    color: $host-gest-color;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.more {
+    flex: 1 0 auto;
+    width: 39px;
+    height: 24px;
+    text-align: right;
+    background-color: $less-more;
+    color: $host-gest-color;
+    font-size: 12px;
+    flex: 1 0 auto;
+    padding-right: 10px;
+}
+
+.gem-set {
+    .host-gest {
+        width: 117px;
+    }
+}

@@ -1,0 +1,140 @@
+@import "variables";
+
+header {
+    min-height: 40px;
+    background-color: $header-background;
+    flex:auto;
+    display: flex;
+    border-bottom: 1px solid $border-color;
+}
+
+.header {
+    align-items: center;
+
+    .button-live-bet {
+        text-decoration: none;
+        height: 24px;
+        margin-left: 8px;
+        flex: 0 0 128px;
+        background-color: $h1;
+        border-radius: 12px;
+        color: $h1-font;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        padding: 4px 12px;
+        line-height: 16px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+
+        ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+
+            li {
+
+
+                margin-left: 12px;
+
+                a {
+                    width: 24px;
+                    height: 24px;
+                    display: block;
+                    overflow: hidden;
+                    text-indent: -1000px;
+                }
+            }
+        }
+    }
+}
+
+.sprite {
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/sports.jpg");
+    background-repeat: no-repeat;
+
+    &.sprite-football {
+        background-position: 0 0;
+    }
+
+    &.sprite-ragby {
+        background-position: -24px 0;
+    }
+
+    &.sprite-tennis {
+        background-position: -48px 0;
+    }
+
+    &.sprite-goals-ligue {
+        background-position: -72px 0;
+    }
+
+    &.sprite-chess {
+        background-position: -96px 0;
+    }
+
+    &.sprite-picado {
+        background-position: -120px 0;
+    }
+
+    &.sprite-grass-hockey {
+        background-position: -144px 0;
+    }
+
+    &.sprite-football-goals {
+        background-position: -168px 0;
+    }
+
+    &.sprite-handball {
+        background-position: -192px 0;
+    }
+
+    &.sprite-hockey {
+        background-position: -216px 0;
+    }
+
+    &.sprite-iks-oks {
+        background-position: -240px 0;
+    }
+
+    &.sprite-formula {
+        background-position: -264px 0;
+    }
+
+    &.sprite-billiar {
+        background-position: -288px 0;
+    }
+
+    &.sprite-ping-pong {
+        background-position: -312px 0;
+    }
+
+    &.sprite-baseball {
+        background-position: -336px 0;
+    }
+
+    &.sprite-mma {
+        background-position: -360px 0;
+    }
+
+    &.sprite-voleyball {
+        background-position: -384px 0;
+    }
+
+    &.sprite-waterpolo {
+        background-position: -408px 0;
+    }
+
+    &.sprite-winter-sports {
+        background-position: -432px 0;
+    }
+}
