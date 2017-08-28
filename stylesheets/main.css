@@ -250,15 +250,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   flex: 1 0 45px;
 }
 
-/* line 209, ../sass/_layout.scss */
-.host-quote,
-.host-gest-quote,
-.gest-quote {
-  flex: 1 0 auto;
-  text-align: center;
-}
-
-/* line 216, ../sass/_layout.scss */
+/* line 170, ../sass/_layout.scss */
 .quotes-set {
   display: flex;
   flex-direction: column;
@@ -267,7 +259,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 40px;
   border-right: 1px solid #213443;
 }
-/* line 225, ../sass/_layout.scss */
+/* line 179, ../sass/_layout.scss */
 .quotes-set .quotes-header {
   height: 12px;
   font-size: 10px;
@@ -275,114 +267,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 12px;
   background-color: #030a11;
 }
-/* line 232, ../sass/_layout.scss */
+/* line 186, ../sass/_layout.scss */
 .quotes-set .quotes {
   flex: 1;
   display: flex;
   flex-direction: row;
 }
 
-/* line 239, ../sass/_layout.scss */
-.first-second-gem {
-  height: 12px;
-  font-size: 10px;
-  text-align: center;
-  line-height: 10px;
-}
-
-/* line 246, ../sass/_layout.scss */
-.first-second-gem-background {
-  background-color: #030a11;
-}
-
-/* line 250, ../sass/_layout.scss */
-.total-gem-set {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 117px;
-  height: 40px;
-}
-
-/* line 257, ../sass/_layout.scss */
-.first-second-gem-final {
-  width: 117px;
-  height: 12px;
-  line-height: 11px;
-  text-align: center;
-  font-size: 10px;
-}
-
-/* line 265, ../sass/_layout.scss */
-.arrow-up-final {
-  display: flex;
-  flex-direction: row;
-  width: 117px;
-  height: 4px;
-}
-
-/* line 273, ../sass/_layout.scss */
-.host-arrow-up-final,
-.gest-arrow-up-final {
-  height: 4px;
-  width: 58.5;
-}
-
-/* line 279, ../sass/_layout.scss */
-.quote-final {
-  width: 117px;
-  height: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex: 1 0 auto;
-  font-size: 14px;
-}
-
-/* line 289, ../sass/_layout.scss */
-.host-quote-final,
-.host-gest-quote-final,
-.gest-quote-final {
-  flex: 1 0 auto;
-  text-align: center;
-}
-
-/* line 296, ../sass/_layout.scss */
-.host-gest-quote-final {
-  color: #fdb417;
-}
-
-/* line 300, ../sass/_layout.scss */
-.arrow-down-final {
-  display: flex;
-  flex-direction: row;
-  width: 117px;
-  height: 4px;
-}
-
-/* line 307, ../sass/_layout.scss */
-.arrow-down-final,
-.gest-arrow-down-final {
-  height: 4px;
-  flex: 1 0 58.5;
-}
-
-/* line 313, ../sass/_layout.scss */
-.quote-more {
-  color: #22965c;
-}
-
-/* line 317, ../sass/_layout.scss */
-.quote-less {
-  color: #a81812;
-}
-
-/* line 325, ../sass/_layout.scss */
+/* line 197, ../sass/_layout.scss */
 .quotes-cell {
   display: flex;
   flex-direction: column;
   min-height: 100%;
 }
-/* line 330, ../sass/_layout.scss */
+/* line 202, ../sass/_layout.scss */
 .quotes-cell .quotes-header {
   height: 12px;
   font-size: 10px;
@@ -390,14 +288,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 12px;
   background-color: #030a11;
 }
-/* line 338, ../sass/_layout.scss */
+/* line 210, ../sass/_layout.scss */
 .quotes-cell .quotes {
   flex: 1;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-/* line 345, ../sass/_layout.scss */
+/* line 217, ../sass/_layout.scss */
 .quotes-cell .quotes .quote {
   flex: 1;
   position: relative;
@@ -409,7 +307,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 14px;
   text-align: center;
 }
-/* line 356, ../sass/_layout.scss */
+/* line 228, ../sass/_layout.scss */
 .quotes-cell .quotes .quote:before, .quotes-cell .quotes .quote:after {
   content: '';
   display: none;
@@ -419,55 +317,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   height: 4px;
   margin-left: -4px;
 }
-/* line 367, ../sass/_layout.scss */
+/* line 239, ../sass/_layout.scss */
 .quotes-cell .quotes .quote:before {
   top: 3px;
   background: url("../images/quote-up.png");
   background-size: 100%;
 }
-/* line 373, ../sass/_layout.scss */
+/* line 245, ../sass/_layout.scss */
 .quotes-cell .quotes .quote:after {
   bottom: 3px;
   background: url("../images/quote-down.png");
   background-size: 100%;
 }
-/* line 379, ../sass/_layout.scss */
+/* line 251, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.up {
   color: #22965c;
 }
-/* line 382, ../sass/_layout.scss */
+/* line 254, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.up:before {
   display: block;
 }
-/* line 388, ../sass/_layout.scss */
+/* line 260, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.down {
   color: #a81812;
 }
-/* line 391, ../sass/_layout.scss */
+/* line 263, ../sass/_layout.scss */
 .quotes-cell .quotes .quote.down:after {
   display: block;
 }
 
-/* line 401, ../sass/_layout.scss */
+/* line 273, ../sass/_layout.scss */
 .quotes-cell-match {
   flex: 0 0 90px;
   max-width: 90px;
   border-right: 1px solid #213443;
 }
 
-/* line 407, ../sass/_layout.scss */
+/* line 279, ../sass/_layout.scss */
 .quotes-cell-set {
   flex: 0 0 90px;
   max-width: 90px;
   border-right: 1px solid #213443;
 }
 
-/* line 413, ../sass/_layout.scss */
+/* line 285, ../sass/_layout.scss */
 .quotes-cell-gems {
   flex: 0 0 117px;
   max-width: 117px;
 }
-/* line 419, ../sass/_layout.scss */
+/* line 291, ../sass/_layout.scss */
 .quotes-cell-gems .quote.quote-x {
   color: #fdb417;
 }
